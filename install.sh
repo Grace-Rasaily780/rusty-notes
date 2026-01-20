@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -e
+
+# Build the release binary
+echo "Building rusty-notes..."
+cargo build --release
+
+# Create local bin if missing
+mkdir -p "$HOME/.local/bin"
+
+# Copy binary
+cp target/release/rusty-notes "$HOME/.local/bin/"
+
+# Make executable
+chmod +x "$HOME/.local/bin/rusty-notes"
+
+echo "Installed rusty-notes to $HOME/.local/bin"
+echo "Make sure $HOME/.local/bin is in your PATH."
