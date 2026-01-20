@@ -141,6 +141,4 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 * **Rust:** [rust-lang.org](https://www.rust-lang.org/)
 * **CLI Framework:** [clap.rs](https://docs.rs/clap/latest/clap/)
 
-```
-
 ---
