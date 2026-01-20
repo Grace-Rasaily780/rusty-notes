@@ -31,20 +31,6 @@ rusty-notes new "Rust Ownership"
 ---
 
 
-### 🎯 Why I Built This
-
-As a developer, I wanted a **CLI-first note-taking tool** that:
-
-* **Plain Files:** Uses local files instead of databases.
-* **Offline First:** Works with zero external dependencies.
-* **Automatable:** Can be easily scripted and piped into other tools.
-* **Organized:** Supports tags, search, and archiving out of the box.
-* **Performant:** Fast and lightweight.
-
-Inspired by **`vimwiki`**, **`jrnl`**, and **`ripgrep`**, but built for the modern Rust ecosystem.
-
----
-
 ## ⚡ Features
 
 * ✅ **Metadata Support:** Create `.note` files with custom titles and tags.
