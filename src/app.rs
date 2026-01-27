@@ -20,6 +20,11 @@ pub fn run(cli: Cli) -> anyhow::Result<()> {
             crate::note::open::open_note(query, &cli.dir, editor)?;
         }
 
+        Commands::Read { query, .. } => {
+            let path = paths::notes_dir(&cli.dir);
+            let _ = crate::note::read::view_note(query, &path.to_str().expect("Path contains invalid UTF-8"));
+        }
+
         _ => println!("Command not implemented yet"),
     }
 

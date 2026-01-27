@@ -122,6 +122,12 @@ pub enum Commands {
         paths_only: bool,
     },
 
+    /// Read the notes
+    Read {
+        /// the file name
+        query: String,
+    },
+
     /// Manage tags
     Tag {
         #[command(subcommand)]
