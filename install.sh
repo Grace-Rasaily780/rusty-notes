@@ -12,10 +12,10 @@ cargo build --release
 mkdir -p "$HOME/.local/bin"
 
 # Copy binary
-cp target/release/rusty-notes "$HOME/.local/bin/"
+cp target/release/rusty-notes "$HOME/.local/bin/rn"
 
 # Make executable
-chmod +x "$HOME/.local/bin/rusty-notes"
+chmod +x "$HOME/.local/bin/rn"
 
 echo "Installed rusty-notes to $HOME/.local/bin"
 echo "Make sure $HOME/.local/bin is in your PATH."

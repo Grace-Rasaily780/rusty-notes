@@ -13,14 +13,12 @@ pub fn write_note(path: &Path, title: String, tags: Vec<String>) -> anyhow::Resu
         tags,
         created: now,
         updated: now,
-        body: String::new(),
     };
 
     let yaml = serde_yaml::to_string(&note)?;
     let content = format!(
-        "---\n{}---\n\n{}",
+        "---\n{}---\n\n",
         yaml,
-        note.body
     );
 
     fs::write(path, content)?;

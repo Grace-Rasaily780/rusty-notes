@@ -8,5 +8,4 @@ pub struct Note {
     pub tags: Vec<String>,
     pub created: DateTime<Local>,
     pub updated: DateTime<Local>,
-    pub body: String,
 }

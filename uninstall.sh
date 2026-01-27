@@ -2,8 +2,8 @@
 set -e
 
 # Default locations
-USER_BIN="$HOME/.local/bin/rusty-notes"
-SYSTEM_BIN="/usr/local/bin/rusty-notes"
+USER_BIN="$HOME/.local/bin/rn"
+SYSTEM_BIN="/usr/local/bin/rn"
 
 echo "Starting rusty-notes uninstall..."
 
